@@ -54,13 +54,17 @@
 										</Image>											
 
 										
-										<!--Ranking prompt  xxxxxxxxxxxxxxxx   -->
+										<!--Ranking prompt  xxxxxxxxxxxxxxxx   
+											
+											formatter: '.getRank.calcIndex'
+											formatter: '.mathematize.statusText'
+										-->
 										
 										<Title
 
 										text="{
 											path: 'primary_product_data>imgURL',
-											formatter: '.mathematize.statusText'
+											formatter: '.getRank.calcIndex'
 											}"
 											class="tileHeaderText">
 											

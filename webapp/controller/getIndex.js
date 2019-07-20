@@ -3,8 +3,8 @@ sap.ui.define([], function () {
 	
 
 	return {
-		statusText: function (sStatus) {
-			return 8;
+		calcIndex: function (sStatus) {
+			return 13;
 		}
 	};
 });

@@ -1,17 +1,16 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
-	"../model/Formatter_GetIndex"
-], function (Controller, JSONModel, FGI) {
+	"../model/Formatter_GetIndex",
+	"../controller/getIndex"
+], function (Controller, JSONModel, FGI, GI) {
 	"use strict";
 
 	return Controller.extend("TM.ConceptRank.controller.Main", {
 		
 		mathematize: FGI,
 
-		getRank: function(){
-			return 7;
-		},
+		getRank: GI,
 
 		onInit: function () {
 
