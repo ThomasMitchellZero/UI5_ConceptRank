@@ -1,0 +1,38 @@
+/* Enter your custom styles here */
+
+.sapMLIB{
+	margin:15px;
+	border:solid grey 1px;
+
+}
+
+.colorSpacer{
+	background-color:cyan;
+}
+
+.colorSpacerRed{
+	background-color:red;
+}
+
+.sapUiLayoutCSSGrid .stylePageLayout {
+	background-color: #3b6f9a;
+	color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ranking_hbox_contents{
+	max-width:100%;
+}
+
+.CLI_TextArea{
+	margin:0px;
+	border:0px;
+}
+
+.sapMBtnBase{
+	margin:0px;
+
+}
