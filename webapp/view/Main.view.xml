@@ -62,7 +62,7 @@
 											path: 'primary_product_data>imgURL',
 											formatter: '.mathematize.statusText'
 											}"
-											class="tileHeaderTextttt">
+											class="tileHeaderText">
 											
 											<layoutData>
 													<grid:GridItemLayoutData 
