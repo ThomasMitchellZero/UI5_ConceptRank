@@ -1,32 +1,61 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel",
-	"../model/Formatter_GetIndex",
-	"../controller/getIndex"
-], function (Controller, JSONModel, FGI, GI) {
+	"sap/ui/model/json/JSONModel"
+], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("TM.ConceptRank.controller.Main", {
-		
-		mathematize: FGI,
+	// goes through the list and sets the .rank property equal to the  item's index.  Sloppy, but I don't know what else to do :(
+	
+	// ID String for the model containing product data.
+	const productModel="primary_product_data";
 
-		getRank: GI,
+	// This loops through the array and sets rank property value.
+	const setAllRanks= function(model){
+		var i;
+		for (i=0; i<model.length; i++){
+			model[i].rank=i;
+			
+		}
+	};
+
+	// returns the integer index of the clicked item in the productModel array.
+	const getClickedItemIndex = function(oEvent){
+
+		const trimString = function(str){
+			let lastSlash = str.lastIndexOf("/");
+
+			// start here next time.  cuts the number correctly, but probs need to convert to an integer.  
+			let indexValue = str.slice((lastSlash + 1), str.length);
+			console.log(indexValue);
+		}
+		//let dataPath = oEvent.getSource().getBindingContext(productModel).sPath;
+		let dataPath = oEvent.getSource().getBindingContext(productModel).rank;
+		console.log(dataPath);
+		trimString(dataPath);
+
+	};
+
+	return Controller.extend("TM.ConceptRank.controller.Main", {
 
 		onInit: function () {
-
 		},
 		
 		onBeforeRendering: function(){
+			
+			// this is hacky, but not sure how to make a version where .this points to the parent function.
+			var PDmodel = this.getView().getModel(productModel).oData.productList;
+
+			console.log(PDmodel);
+			setAllRanks(PDmodel);
+			console.log(PDmodel);
 
 		},
 		upButton: function(oEvent){
-			
-			const ProdMod = "primary_product_data";
-			var PDmodel = this.getView().getModel(ProdMod);
-			
-			// this generates the path.  if I can just get the index, I can do this.
-			var dataPath = oEvent.getSource().getBindingContext("primary_product_data").sPath;
-			console.log(dataPath);	
+
+
+
+			getClickedItemIndex(oEvent);
+
 		},
 		downButton: function(){
 			console.log("DOWN!");

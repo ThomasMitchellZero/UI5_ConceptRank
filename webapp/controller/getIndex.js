@@ -3,8 +3,13 @@ sap.ui.define([], function () {
 	
 
 	return {
-		calcIndex: function (sStatus) {
-			return 13;
+		calcIndex: function (model) {
+			
+			var i;
+			for (i=0; i<model.length; i++){
+				model[i].rank=i;
+				
+			}
 		}
 	};
 });

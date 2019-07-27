@@ -62,11 +62,7 @@
 										
 										<Title
 
-										text="{
-											path: 'primary_product_data>imgURL',
-											formatter: '.getRank.calcIndex'
-											}"
-											class="tileHeaderText">
+										text="Why did you rank this one {primary_product_data>rank}?">
 											
 											<layoutData>
 													<grid:GridItemLayoutData 
