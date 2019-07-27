@@ -13,121 +13,21 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						
-						<List 
-							headerText="Head Me"
-							items="{
-								path:'primary_product_data>/productList'
-								}"
 
-							id="mainProductDisplay">
-							
-							<!-- Template for how each box is laid out -->
-							<CustomListItem>
-								<grid:CSSGrid
-									gridTemplateColumns="0px repeat(12, minmax(30px,1fr)) 0px"
-									gridTemplateRows="0px repeat(5, minmax(50px, 1fr)) 0px"
-									gridGap="1rem">
+								<Button
+									text="Add New Concept Collection">
+								</Button>
+
+								<List
+									items="{primary_product_data>/conceptCollectionList}">
 									
-
-									<grid:items>
-										<!--Header bar -->
-										<FlexBox class="colorSpacer">
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "2 / 14"
-														gridRow = "2 / 3"/>
-											</layoutData>	
-										</FlexBox>
+									<StandardListItem
+										title="{primary_product_data>collectionMeta/collectionName}">
 										
-										<!--Picture area -->	
-
-										<Image
-											class="ranking_hbox_contents"
-											src="{path: 'primary_product_data>imgURL'}"
-											>
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "2 / 6"
-														gridRow = "3 / 7"/>
-											</layoutData>												
-										</Image>											
-
-										
-										<!--Ranking prompt  xxxxxxxxxxxxxxxx   
-											
-											formatter: '.getRank.calcIndex'
-											formatter: '.mathematize.statusText'
-										-->
-										
-										<Title
-
-										text="Why did you rank this one {primary_product_data>rank}?">
-											
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "6 / 14"
-														gridRow = "3 / 4"/>
-											</layoutData>												
-										</Title>
-										
-										<!--Comments input box  -->
-										<TextArea
-											class="CLI_TextArea">
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "6 / 12"
-														gridRow = "4 / 7"/>
-											</layoutData>
-											
-										</TextArea>
-										
-
-										
-										<!--up button  -->
-										
-										<Button
-											class="BigButton"
-											icon="sap-icon://slim-arrow-up"
-											text="{i18n>rankUpBtnText}"
-											press="upButton">
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "12 / 14"
-														gridRow = "4 / 5"/>
-											</layoutData>											
-											
-										</Button>
+									</StandardListItem>
+								</List>
 
 
-										<!--down button  -->
-										
-										<Button
-											class="BigButton"
-											icon="sap-icon://slim-arrow-down"
-											text="{i18n>rankDownBtnText}"
-											press="downButton">
-											<layoutData>
-													<grid:GridItemLayoutData 
-														gridColumn = "12 / 14"
-														gridRow = "6 / 7"/>
-											</layoutData>												
-											
-										</Button>
-
-										
-									</grid:items>
-
-									
-								</grid:CSSGrid>
-									
-									
-								
-
-							</CustomListItem>
-
-						</List>
-						
 					</content>
 				</Page>
 			</pages>
@@ -135,23 +35,15 @@
 	</Shell>
 </mvc:View>
 
+<!--
 
+								<List
+									items="{primary_product_data>/conceptCollectionList}">
+									
+									<StandardListItem
+										title="{primary_product_data>title}">
+										
+									</StandardListItem>
+								</List>
 
-<!--  
-
-
-This accesses an outside function.  Not sure how to use it to get an index.
-
-											text="{
-											path: 'primary_product_data>imgURL',
-											formatter: '.mathematize.statusText'
-											}"
-											class="tileHeaderText">
-
-This generates the length of the productList array.
-	text="{= ${primary_product_data>/productList}.length}"
-
-	text="{i18n>rankUpBtnText} is the {=(4+5)} thing"
 -->
-
-
