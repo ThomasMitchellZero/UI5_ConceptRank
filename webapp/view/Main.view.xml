@@ -15,16 +15,22 @@
 					<content>
 
 								<Button
-									text="Add New Concept Collection">
+									id="addNewCollectionBtn"
+									text="Add New Concept Collection"
+									press="onCreateNew">
 								</Button>
 
 								<List
 									items="{primary_product_data>/conceptCollectionList}">
-									
-									<StandardListItem
-										title="{primary_product_data>collectionMeta/collectionName}">
-										
-									</StandardListItem>
+									<items>
+										<ObjectListItem
+											title="{primary_product_data>collectionMeta/collectionName}"
+											icon="sap-icon://background"
+											type="Navigation"
+											press="pressedListItem">
+											
+										</ObjectListItem>
+								</items>
 								</List>
 
 
@@ -34,7 +40,6 @@
 		</App>
 	</Shell>
 </mvc:View>
-
 <!--
 
 								<List
