@@ -16,6 +16,11 @@
             text="Add New Concept Collection"
             press="onCreateNew">
           </Button>
+          <Button
+            id="testButton"
+            text="Test Button"
+            press="onDisplayNotFound">
+          </Button>
 
           <List
             items="{primary_product_data>/conceptCollectionList}">

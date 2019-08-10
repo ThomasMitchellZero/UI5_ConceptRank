@@ -85,16 +85,24 @@
 			"routes": [{
 				"pattern": "",
 				"name": "NameHome",
-				"target": ["TargetHome"]
+				"target": ["targethome"]
+			},{
+				"pattern":"addnewcollection",
+				"name":"AddNewCollection",
+				"target":["targetAddNewColl"]
 			}],
 			"targets": {
-				"TargetHome": {
+				"targethome": {
 					"viewName": "Home",
 					"viewLevel": 1
 				},
 				"notFound":{
 					"viewName":"NotFound",
 					"transition":"show"
+				},
+				"targetAddNewColl":{
+					"viewName":"AddNewColl",
+					"viewLevel":2
 				}
 			}
 		}
