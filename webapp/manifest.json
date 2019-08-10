@@ -91,10 +91,13 @@
 				"name":"AddNewCollection",
 				"target":["targetAddNewColl"]
 			},{
-
+				"pattern":"seecollections",
+				"name": "SeeCollections",
+				"target": "targetSeeCollections"
+			},{
 				"pattern":"/{collections}",
 				"name":"collection",
-				"target":["targetCollection"]
+				"target":["targetCollections"]
 
 			}
 		
@@ -110,11 +113,15 @@
 				},
 				"targetAddNewColl":{
 					"viewName":"AddNewColl",
-					"viewLevel":2
+					"viewLevel": 2
+				},
+				"targetSeeCollections":{
+					"viewName": "SeeCollections",
+					"viewLevel": 2
 				},
 				"targetCollection":{
 					"viewName":"collection.Collection",
-					"viewLevel":2
+					"viewLevel":3
 				}
 
 			}

@@ -17,23 +17,19 @@
             press="onNavToAddCollection">
           </Button>
           <Button
+            id="SeeCollectionsBtn"
+            text="See Collections"
+            press="onNavToCollections">
+            
+
+          </Button>
+          <Button
             id="testButton"
             text="Test Button"
             press="onDisplayNotFound">
           </Button>
 
-          <List
-            items="{primary_product_data>/conceptCollectionList}">
-            <items>
-              <ObjectListItem
-                title="{primary_product_data>collectionMeta/collectionName}"
-                icon="sap-icon://background"
-                type="Navigation"
-                press="pressedListItem">
-                
-              </ObjectListItem>
-          </items>
-          </List>
+
 
 
     </content>

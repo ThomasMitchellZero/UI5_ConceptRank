@@ -16,6 +16,10 @@ sap.ui.define([
 
     onNavToAddCollection: function(oEvent){
       this.getRouter().navTo("AddNewCollection");
+    },
+
+    onNavToCollections: function(oEvent){
+      this.getRouter().navTo("SeeCollections");
     }
   });
 

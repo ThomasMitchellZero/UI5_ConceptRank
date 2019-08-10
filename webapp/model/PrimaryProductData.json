@@ -1,21 +1,21 @@
 {
 	"conceptCollectionList":[
 		{	
-			"title":"first",
+			"collectionTitle":"first",
 			"collectionMeta":{
 				"collectionName":"AcaVor Camera Concepts"
 			},
 			"productList":[
-				{},{},{}
+				{"title":"AV1"},{"title":"AV2"},{"title":"AV3"}
 			]
 		},
 		{
-			"title":"second",
+			"collectionTitle":"second",
 			"collectionMeta":{
 				"collectionName":"Woodlands projects"
 			},
 			"productList":[
-				{},{},{}
+				{"title":"WL1"},{"title":"WL2"},{"title":"WL3"}
 			]
 		}
 	]
