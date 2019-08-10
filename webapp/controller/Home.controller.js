@@ -14,8 +14,8 @@ sap.ui.define([
       });
     },
 
-    onNavToAddCollection: function(){
-      this.getRouter.navTo("")
+    onNavToAddCollection: function(oEvent){
+      this.getRouter().navTo("AddNewCollection");
     }
   });
 

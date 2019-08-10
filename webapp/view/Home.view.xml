@@ -14,7 +14,7 @@
           <Button
             id="addNewCollectionBtn"
             text="Add New Concept Collection"
-            press="onCreateNew">
+            press="onNavToAddCollection">
           </Button>
           <Button
             id="testButton"
