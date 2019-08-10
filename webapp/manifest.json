@@ -90,7 +90,15 @@
 				"pattern":"addnewcollection",
 				"name":"AddNewCollection",
 				"target":["targetAddNewColl"]
-			}],
+			},{
+
+				"pattern":"/{collections}",
+				"name":"collection",
+				"target":["targetCollection"]
+
+			}
+		
+		],
 			"targets": {
 				"targethome": {
 					"viewName": "Home",
@@ -103,7 +111,12 @@
 				"targetAddNewColl":{
 					"viewName":"AddNewColl",
 					"viewLevel":2
+				},
+				"targetCollection":{
+					"viewName":"collection.Collection",
+					"viewLevel":2
 				}
+
 			}
 		}
 	}

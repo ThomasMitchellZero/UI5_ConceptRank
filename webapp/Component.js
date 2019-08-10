@@ -1,7 +1,9 @@
+// all the stuff having to do with setting models is questionable.  It seems to be vestigial but I don't want to delete it until I am sure.
+
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"TM/ConceptRank/model/models"
+	//"TM/ConceptRank/model/models"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
@@ -24,7 +26,7 @@ sap.ui.define([
 			this.getRouter().initialize();
 
 			// set the device model
-			this.setModel(models.createDeviceModel(), "device");
+			//this.setModel(models.createDeviceModel(), "device");
 		}
 	});
 });
