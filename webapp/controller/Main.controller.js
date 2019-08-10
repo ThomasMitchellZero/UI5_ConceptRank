@@ -1,9 +1,9 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-], function (Controller) {
+	"TM/ConceptRank/controller/BaseController",
+], function (BaseController) {
 	"use strict";
 
-	return Controller.extend("TM.ConceptRank.controller.Main", {
+	return BaseController.extend("TM.ConceptRank.controller.Main", {
 
 		onInit: function () {
 		},

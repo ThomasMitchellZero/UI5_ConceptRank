@@ -77,7 +77,10 @@
 				"viewPath": "TM.ConceptRank.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
-				"clearControlAggregation": false
+				"clearControlAggregation": false,
+				"bypassed":{
+					"target": "notFound"
+				}
 			},
 			"routes": [{
 				"pattern": "",
@@ -88,6 +91,10 @@
 				"TargetHome": {
 					"viewName": "Home",
 					"viewLevel": 1
+				},
+				"notFound":{
+					"viewName":"NotFound",
+					"transition":"show"
 				}
 			}
 		}
