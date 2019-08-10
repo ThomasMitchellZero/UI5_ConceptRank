@@ -17,6 +17,15 @@
         text="List O' Collections">
 
       </Button>
+
+      <Panel>
+        <headerToolbar>
+          <Toolbar>
+            
+          </Toolbar>
+        </headerToolbar>
+
+      </Panel>
     </Page>
 
 </mvc:View>
