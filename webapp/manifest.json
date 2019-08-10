@@ -95,7 +95,7 @@
 				"name": "SeeCollections",
 				"target": "targetSeeCollections"
 			},{
-				"pattern":"/{collections}",
+				"pattern":"seecollections/{collections}",
 				"name":"collection",
 				"target":["targetCollections"]
 
@@ -116,11 +116,11 @@
 					"viewLevel": 2
 				},
 				"targetSeeCollections":{
-					"viewName": "SeeCollections",
+					"viewName": "collectionFiles.SeeCollections",
 					"viewLevel": 2
 				},
 				"targetCollection":{
-					"viewName":"collection.Collection",
+					"viewName":"collectionFiles.Collection",
 					"viewLevel":3
 				}
 

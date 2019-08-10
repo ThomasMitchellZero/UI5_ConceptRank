@@ -1,5 +1,5 @@
 <mvc:View 
-	controllerName="TM.ConceptRank.controller.SeeCollections" 
+	controllerName="TM.ConceptRank.controller.collectionFiles.SeeCollections" 
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true" 
 	xmlns="sap.m"

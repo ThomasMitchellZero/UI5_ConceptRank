@@ -1,5 +1,5 @@
 <mvc:View 
-	controllerName="TM.ConceptRank.controller.AddNewColl" 
+  controllerName="TM.ConceptRank.controller.collectionFiles.Collections" 
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true" 
 	xmlns="sap.m"
@@ -14,7 +14,7 @@
 		  navButtonPress="onNavBack">
 
       <Button
-        text="EmptyButton">
+        text="List O' Collections">
 
       </Button>
     </Page>
