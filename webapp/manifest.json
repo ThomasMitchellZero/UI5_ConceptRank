@@ -80,17 +80,14 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
-				"name": "NameMain",
-				"pattern": "RouteMain",
-				"target": ["TargetMain"]
+				"pattern": "",
+				"name": "NameHome",
+				"target": ["TargetHome"]
 			}],
 			"targets": {
-				"TargetMain": {
-					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
-					"viewId": "Main",
-					"viewName": "Main"
+				"TargetHome": {
+					"viewName": "Home",
+					"viewLevel": 1
 				}
 			}
 		}

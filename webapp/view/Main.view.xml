@@ -8,37 +8,10 @@
 	xmlns:core="sap.ui.core">
 	
 	
-	<Shell id="shell">
 		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content>
-
-								<Button
-									id="addNewCollectionBtn"
-									text="Add New Concept Collection"
-									press="onCreateNew">
-								</Button>
-
-								<List
-									items="{primary_product_data>/conceptCollectionList}">
-									<items>
-										<ObjectListItem
-											title="{primary_product_data>collectionMeta/collectionName}"
-											icon="sap-icon://background"
-											type="Navigation"
-											press="pressedListItem">
-											
-										</ObjectListItem>
-								</items>
-								</List>
-
-
-					</content>
-				</Page>
-			</pages>
+			
 		</App>
-	</Shell>
+
 </mvc:View>
 <!--
 
